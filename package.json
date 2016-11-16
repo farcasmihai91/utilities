@@ -1,0 +1,20 @@
+{
+  "name": "js-stack",
+  "version": "1.0.0",
+  "description": "A stack implementation using ES6 Class",
+  "main": "stack.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "stack",
+    "js",
+    "javascript"
+  ],
+  "author": "Mihai Farcas",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2"
+  }
+}
