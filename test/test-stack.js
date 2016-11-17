@@ -7,7 +7,7 @@ const Stack = require('../stack');
 
 
 describe('Stack', function () {
-  it('should start empty if no items provided', function () {
+  it('should initialize empty if no items provided', function () {
     let myStack = new Stack();
 
     assert.equal(myStack.isEmpty(), true);
