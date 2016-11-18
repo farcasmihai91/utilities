@@ -6,7 +6,7 @@ Great for learning but probably need adjustments for using in production.
 Also some of them are not so usefull and should be interpreted as exercise.
 
 ---
-1. A stack implementation using ES6 Classes with unit tests.
+### A stack implementation using ES6 Classes with unit tests.
 
 > Very simple implementation of a stack in JavaScript with some additional helper methods.
 > Useful when trying to not repeat yourself with the same array functions over and over when 
@@ -23,7 +23,7 @@ Methods:
 * isEmpty - returns `true` if the stack is empty or `false` if it's not.
 
 ---
-2. A queue implementation using ES6 Classes with unit tests.
+### A Queue implementation using ES6 Classes with unit tests.
 
 > Very similar to the Stack implementation.
 
@@ -36,7 +36,7 @@ Methods:
 * size - returns how many elements the queue contains.
 
 ---
-3. The Priority Queue
+### The Priority Queue
 
 > This is a modified version of the basic queue that prioritizes some elements ahead of others.
 > The  Priority Queue inherits methods from the normal Queue (so tehy will now wotk one without another).
@@ -47,4 +47,42 @@ Methods:
 
 * enqueue - it is an overridden version of the enqueue function from the normal Queue.
 It takes into account the priority and arranges the items correspondingly into the Queue.
+This implementation repsects items that are of the same priority but added before.
 * The rest of the methods are exactly the same as for the normal Queue
+
+---
+### Sets
+
+> A set is a collection of unordered elements that are unique. 
+> In ES6 there is a native Set class so there is no need for a helper function.
+> But the ES6 implementation lacks implementation of basic set operations such as `union`, `intersection`,
+`difference`, `isSuperset`.
+> An example implementation of these operations can be found at [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)
+
+---
+### Dictionaries
+
+> A dictionary is a collection of distinct elements that are stored as `[key, value]` pairs.
+> The Dictionaries are implemented in ES6 in the form of the `Map` class.
+> More information can be found at [MDN](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Map)
+
+---
+### Hash Map
+
+> Hashing is finding a value in a data structure in the shortest possible time.
+> You can store key-value pairs in this hash map for very fast retrieval accomplished by
+> reducing the cost of the 'lookup'.
+> This implementation is unsing the 'djb2' hash function.
+> The 'djb2' is not the most efficient hash function, but it is easy to
+> implement and is fairly robust.
+> This implementation handles collisions using the linear probing method.
+
+Methods:
+* put - adds a new value (or updates a value) to the hash map.
+* remove - removes the calue from the hash map.
+* get - returns a value searched by the key.
+
+---
+### Tree
+
+> Next up ...
